@@ -1,0 +1,9 @@
+ @use'./sass/basic';
+ @use'./sass/normalizer';
+ @use'./sass//mixins';
+
+
+//  Components  //
+
+@use'./components//navBar/navbar.scss'
+
