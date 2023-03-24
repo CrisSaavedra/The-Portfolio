@@ -1,0 +1,14 @@
+$breakpoints: (
+    md: 768px,
+    l: 1200px,
+);
+
+@mixin media-query($breakpoint){
+    @if map-has-key($breakpoints, $breakpoint ){
+        @media screen and (min-width: map-get($breakpoints,$breakpoint)) {
+            @content;
+        }
+    }@else{
+        @warn "Error media-query"
+    }
+}

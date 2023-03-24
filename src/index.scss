@@ -5,5 +5,11 @@
 
 //  Components  //
 
-@use'./components//navBar/navbar.scss'
+@use'./components/navBar/navbar';
+
+
+.color-background{
+    background-color: black;
+    height: 100vh;
+};
 

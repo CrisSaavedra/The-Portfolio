@@ -1,50 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800;900&display=swap');
+
+
 :root {
-   --var: black;
+    --font-principal: 'Kanit', sans-serif;
+    --text-color: white;
 }
 
-html{
+html {
     box-sizing: border-box;
     font-size: 62.5%;
+    font-family: var(--font-principal);
+    color: var(--text-color)
+
 }
-*,*:before, *::after{
+
+*,
+*:before,
+*::after {
     box-sizing: inherit;
 }
 
-body{
+body {
     font-size: 1.6rem;
     line-height: 1.5;
+
 }
 
 /*GLOBALS*/
 
-.container{
-    max-width: 1200rem; /*Maximo tomara mil 200 pixeles */
-    width: 90%; /* tomara el 90% de la pantalla*/
+.container {
+    max-width: 1200rem;
+    /*Maximo tomara mil 200 pixeles */
+    width: 90%;
+    /* tomara el 90% de la pantalla*/
     margin: 0 auto;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 100;
     margin: 0;
     padding: 0;
+
 }
 
-h1{
+h1 {
     font-size: 4.4rem;
 }
-h2{
+
+h2 {
     font-size: 3.6rem;
 }
-h3{
+
+h3 {
     font-size: 2.8rem;
 }
 
-img{
+img {
     max-width: 100%;
     display: block;
 }
 
-a{
+a {
     text-decoration: none;
-    color: black;
+    color: var(--text-color)
 }

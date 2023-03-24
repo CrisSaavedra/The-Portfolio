@@ -1,13 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800;900&display=swap");
 :root {
-  --var: black;
+  --font-principal: "Kanit", sans-serif;
+  --text-color: white;
 }
 
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  font-family: var(--font-principal);
+  color: var(--text-color);
 }
 
-*, *:before, *::after {
+*,
+*:before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -18,12 +24,19 @@ body {
 
 /*GLOBALS*/
 .container {
-  max-width: 1200rem; /*Maximo tomara mil 200 pixeles */
-  width: 90%; /* tomara el 90% de la pantalla*/
+  max-width: 1200rem;
+  /*Maximo tomara mil 200 pixeles */
+  width: 90%;
+  /* tomara el 90% de la pantalla*/
   margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 100;
   margin: 0;
   padding: 0;
@@ -48,7 +61,7 @@ img {
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--text-color);
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -361,10 +374,14 @@ template {
 }
 
 .nav-container {
-  margin-top: 3rem;
+  padding-top: 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.color-background {
+  background-color: black;
+  height: 100vh;
 }
 
 /*# sourceMappingURL=index.css.map */
