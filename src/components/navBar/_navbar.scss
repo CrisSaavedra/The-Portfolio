@@ -7,7 +7,7 @@
     height: 5rem;
     
     .logo-container {
-        @include mix.flex-standard($flex: row, $items: center, $justify: center);
+        @include mix.flex-standard($flex: row, $items: none, $justify: center);
 
         img {
             width: 50px;
