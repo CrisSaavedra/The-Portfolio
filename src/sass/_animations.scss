@@ -1,0 +1,32 @@
+
+@keyframes buttonsMenu1 {
+    0% {
+        transform: translateX(170px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+
+@keyframes buttonsMenu1Reverse {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(170px);
+    }
+
+}
+
+.a-buttonsMenu-1-reverse{
+    animation: buttonsMenu1Reverse 0.3s ease-in ;
+}
+
+
+.a-buttonsMenu-1{
+    animation: buttonsMenu1 0.3s ease-out ;
+}
