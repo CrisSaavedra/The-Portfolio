@@ -386,7 +386,7 @@ template {
   justify-content: space-between;
   font-size: 1rem;
   margin: 2rem auto;
-  height: 5rem;
+  height: 7rem;
 }
 .nav-container .logo-container {
   display: flex;
@@ -422,6 +422,7 @@ template {
 
 .hamburger-icon {
   filter: invert(73%) sepia(97%) saturate(1%) hue-rotate(35deg) brightness(104%) contrast(100%) drop-shadow(0px 0px 1px rgba(190, 195, 195, 0.384));
+  padding-top: 4px;
 }
 .hamburger-icon:hover, .hamburger-icon :active, .hamburger-icon :focus {
   filter: invert(88%) sepia(100%) saturate(6643%) hue-rotate(147deg) brightness(94%) contrast(90%);

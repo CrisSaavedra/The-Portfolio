@@ -25,8 +25,13 @@ export const Menu = () => {
     useEffect(() => {
         window.addEventListener('resize', () => {
             let element = document.getElementById('nav');
+            let hambuerger = document.getElementById('hamburger-button');
             if(window.innerWidth > 1080){
                 element.style.display= "block";
+                hambuerger.style.display = "none";
+            }else{
+                element.style.display= "none";
+                hambuerger.style.display = "block";
             }
         })
     }, []);
