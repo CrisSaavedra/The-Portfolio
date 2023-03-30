@@ -1,14 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800;900&display=swap");
 :root {
-  --font-principal: "Kanit", sans-serif;
-  --text-color: white;
+  --fuente-principal: "Kanit", sans-serif;
+  --negro: #191919;
+  --negro-2: #242424;
+  --blanco: #ebebeb;
+  --celeste: #5ce1e6;
+  --rosado: #cf649a;
 }
 
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  font-family: var(--font-principal);
-  color: var(--text-color);
+  font-family: var(--fuente-principal);
+  color: var(--blanco);
 }
 
 *,
@@ -20,17 +24,11 @@ html {
 body {
   font-size: 1.6rem;
   line-height: 1.5;
+  background-color: var(--negro);
+  height: 100vh;
 }
 
 /*GLOBALS*/
-.container {
-  max-width: 1200rem;
-  /*Maximo tomara mil 200 pixeles */
-  width: 90%;
-  /* tomara el 90% de la pantalla*/
-  margin: 0 auto;
-}
-
 h1,
 h2,
 h3,
@@ -40,6 +38,7 @@ h6 {
   font-weight: 100;
   margin: 0;
   padding: 0;
+  font-family: var(--fuente-principal);
 }
 
 h1 {
@@ -61,7 +60,8 @@ img {
 
 a {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--blanco);
+  font-family: var(--fuente-principal);
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -373,15 +373,166 @@ template {
   display: none;
 }
 
-.nav-container {
-  padding-top: 3rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.container {
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
 }
-.color-background {
-  background-color: black;
-  height: 100vh;
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  margin: 2rem auto;
+  height: 5rem;
+}
+.nav-container .logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.nav-container .logo-container img {
+  width: 50px;
+  filter: drop-shadow(0px 0px 8px rgba(60, 173, 188, 0.486));
+}
+.nav-container .logo-container h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  filter: drop-shadow(-4px 0px 6px rgba(60, 173, 188, 0.605));
+}
+@media screen and (min-width: 768px) {
+  .nav-container .logo-container img {
+    width: 60px;
+  }
+  .nav-container .logo-container h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .nav-container {
+    margin: 4rem auto;
+  }
+  .nav-container .logo-container h1 {
+    font-weight: 500;
+  }
+}
+
+.hamburger-icon {
+  filter: invert(73%) sepia(97%) saturate(1%) hue-rotate(35deg) brightness(104%) contrast(100%) drop-shadow(0px 0px 1px rgba(190, 195, 195, 0.384));
+}
+.hamburger-icon:hover, .hamburger-icon :active, .hamburger-icon :focus {
+  filter: invert(88%) sepia(100%) saturate(6643%) hue-rotate(147deg) brightness(94%) contrast(90%);
+}
+@media screen and (min-width: 768px) {
+  .hamburger-icon {
+    width: 75px;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .hamburger-icon {
+    display: none;
+  }
+}
+
+.options-container {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0%;
+  background-color: var(--negro-2);
+  transition: 0.3s ease-in;
+  overflow-x: hidden;
+  display: none;
+}
+.options-container .x-button {
+  display: inline-block;
+  z-index: 10;
+  margin-left: 14rem;
+  margin-top: 3.8rem;
+}
+.options-container img {
+  width: 1.3rem;
+  filter: invert(73%) sepia(97%) saturate(1%) hue-rotate(35deg) brightness(104%) contrast(100%);
+}
+.options-container img:hover, .options-container img :active, .options-container img :focus {
+  filter: invert(88%) sepia(100%) saturate(6643%) hue-rotate(147deg) brightness(94%) contrast(90%);
+}
+.options-container .options {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+.options-container .options a {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-left: 2rem;
+  margin-right: 9rem;
+  margin-bottom: 1rem;
+  color: var(--blanco);
+  filter: drop-shadow(0px 0px 2px rgba(214, 220, 220, 0.13));
+}
+.options-container .options a:hover, .options-container .options a :active, .options-container .options a :focus {
+  color: var(--celeste);
+}
+.options-container .options a span {
+  filter: drop-shadow(0px 0px 2px rgba(159, 109, 147, 0.117));
+  color: var(--rosado);
+}
+@media screen and (min-width: 768px) {
+  .options-container .x-button {
+    display: inline-block;
+    z-index: 10;
+    margin-left: 18rem;
+    margin-top: 3.5rem;
+  }
+  .options-container img {
+    width: 18px;
+  }
+  .options-container .options {
+    padding-top: 2rem;
+  }
+  .options-container .options a {
+    font-size: 2.3rem;
+    margin-right: 13rem;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .options-container {
+    position: relative;
+    background-color: var(--negro);
+    display: block;
+    padding-top: 0rem;
+    margin-top: 0;
+  }
+  .options-container .x-button {
+    display: none;
+  }
+  .options-container img {
+    display: none;
+  }
+  .options-container .options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0;
+  }
+  .options-container .options a {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-left: 4rem;
+    margin-right: 0rem;
+    margin-bottom: 0rem;
+    color: var(--blanco);
+  }
+  .options-container .options a span {
+    color: var(--rosado);
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

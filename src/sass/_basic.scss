@@ -2,15 +2,19 @@
 
 
 :root {
-    --font-principal: 'Kanit', sans-serif;
-    --text-color: white;
+    --fuente-principal: "Kanit", sans-serif;
+    --negro: #191919;
+    --negro-2: #242424;
+    --blanco: #ebebeb;
+    --celeste: #5ce1e6;
+    --rosado: #cf649a;
 }
 
 html {
     box-sizing: border-box;
     font-size: 62.5%;
-    font-family: var(--font-principal);
-    color: var(--text-color)
+    font-family: var(--fuente-principal);
+    color: var(--blanco)
 
 }
 
@@ -23,18 +27,12 @@ html {
 body {
     font-size: 1.6rem;
     line-height: 1.5;
+    background-color: var(--negro);
+    height: 100vh;
 
 }
 
 /*GLOBALS*/
-
-.container {
-    max-width: 1200rem;
-    /*Maximo tomara mil 200 pixeles */
-    width: 90%;
-    /* tomara el 90% de la pantalla*/
-    margin: 0 auto;
-}
 
 h1,
 h2,
@@ -45,6 +43,7 @@ h6 {
     font-weight: 100;
     margin: 0;
     padding: 0;
+    font-family: var(--fuente-principal);
 
 }
 
@@ -67,5 +66,6 @@ img {
 
 a {
     text-decoration: none;
-    color: var(--text-color)
+    color: var(--blanco);
+    font-family: var(--fuente-principal);
 }

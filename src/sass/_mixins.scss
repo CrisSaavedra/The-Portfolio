@@ -1,6 +1,6 @@
 $breakpoints: (
     md: 768px,
-    l: 1200px,
+    l: 1080px,
 );
 
 @mixin media-query($breakpoint){
@@ -11,4 +11,11 @@ $breakpoints: (
     }@else{
         @warn "Error media-query"
     }
+};
+
+@mixin flex-standard($flex,$items,$justify){
+    display: flex;
+    flex-direction: $flex;
+    align-items: $items;
+    justify-content: $justify;
 }
