@@ -1,5 +1,6 @@
-import { Home } from "./components/home/home"
 import { NavBar } from "./components/navBar/NavBar"
+import { Home } from "./components/home/Home"
+import { Projects } from "./components/projects/Projects"
 
 export const Portafolio = () => {
     return (
@@ -7,7 +8,8 @@ export const Portafolio = () => {
         <div className="container">
             {/* loader aca */}
             <NavBar />
-            <Home/>
+            <Home />
+            <Projects/>
         </div>
 
     )

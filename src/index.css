@@ -2,7 +2,7 @@
 :root {
   --fuente-principal: "Kanit", sans-serif;
   --negro: #191919;
-  --negro-2: #242424;
+  --negro-2: #262727;
   --blanco: #ebebeb;
   --celeste: #5ce1e6;
   --rosado: #cf649a;
@@ -564,6 +564,35 @@ template {
   .options-container .options a span {
     color: var(--rosado);
   }
+}
+
+.home-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 90%;
+}
+
+.projects-container {
+  display: block;
+  max-width: 90%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.display-projects {
+  background-color: rgb(38, 40, 41);
+  height: 20rem;
+  width: 90%;
+  border-radius: 2%;
+  filter: drop-shadow(0px 0px 2px var(--celeste));
+  z-index: 100;
 }
 
 /*# sourceMappingURL=index.css.map */
