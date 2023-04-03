@@ -567,13 +567,102 @@ template {
 }
 
 .home-container {
+  color: var(--blanco);
   margin: 0 auto;
+  margin-top: 17rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   max-width: 90%;
+}
+.home-container .first-text {
+  max-width: 30rem;
+}
+.home-container .first-text h2 {
+  font-weight: 500;
+  font-size: 3rem;
+}
+.home-container .home-text {
+  font-size: 1.3rem;
+  max-width: 22rem;
+  margin-top: 0.6rem;
+}
+.home-container .home-text .hello {
+  color: var(--celeste);
+}
+.home-container .tech-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12rem;
+}
+.home-container .tech-container h5 {
+  font-weight: 700;
+  color: var(--rosado);
+}
+.home-container .tech-container .techs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .home-container .first-text {
+    max-width: 50rem;
+  }
+  .home-container .first-text h2 {
+    font-size: 4.5rem;
+  }
+  .home-container .home-text {
+    margin-top: 0rem;
+    max-width: 38rem;
+    font-size: 1.5rem;
+  }
+  .home-container .tech-container {
+    gap: 1rem;
+    margin-top: 8rem;
+  }
+  .home-container .tech-container h5 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--rosado);
+  }
+  .home-container .tech-container .techs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+  .home-container .tech-container .techs img {
+    width: 28px;
+  }
+  .home-container .tech-container .techs .js {
+    width: 26px;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .home-container {
+    margin-top: 25rem;
+  }
+  .home-container .first-text {
+    max-width: 70rem;
+  }
+  .home-container .first-text h2 {
+    font-size: 5rem;
+  }
+  .home-container .home-text {
+    font-size: 1.8rem;
+  }
+  .home-container .tech-container {
+    margin-top: 18rem;
+  }
 }
 
 .projects-container {

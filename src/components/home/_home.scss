@@ -1,8 +1,0 @@
-@use'../../sass/mixins' as mix;
-
-.home-container{
-    margin: 0 auto;
-    @include mix.flex-standard($flex:column, $items:center, $justify:center);
-    text-align: center;
-    max-width: 90%;
-}

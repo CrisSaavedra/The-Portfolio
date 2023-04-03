@@ -1,0 +1,183 @@
+@use'../../sass/mixins' as mix;
+
+.home-container {
+    color: var(--blanco);
+    margin: 0 auto;
+    margin-top: 17rem;
+    @include mix.flex-standard($flex: column, $items: center, $justify: center);
+    text-align: center;
+    max-width: 90%;
+
+
+    .first-text {
+        max-width: 30rem;
+
+        h2 {
+            font-weight: 500;
+            font-size: 3rem;
+        }
+    }
+
+
+    .home-text {
+        font-size: 1.3rem;
+        max-width: 22rem;
+        margin-top: 0.6rem;
+
+        .hello {
+            color: var(--celeste);
+        }
+    }
+
+
+    .tech-container {
+        @include mix.flex-standard($flex: column, $items: center, $justify: center);
+        margin-top: 12rem;
+
+        h5 {
+            font-weight: 700;
+            color: var(--rosado);
+        }
+
+        .techs {
+            @include mix.flex-standard($flex: row, $items: center, $justify: center);
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+
+    }
+
+    @include mix.media-query(md) {
+
+        .first-text {
+            max-width: 50rem;
+
+            h2 {
+                font-size: 4.5rem;
+            }
+        }
+
+        .home-text {
+
+            margin-top: 0rem;
+            max-width: 38rem;
+            font-size: 1.5rem;
+        }
+
+        .tech-container {
+       
+            gap: 1rem;
+            margin-top: 8rem;
+
+            h5 {
+                font-weight: 700;
+                font-size: 2rem;
+                color: var(--rosado);
+            }
+
+            .techs {
+                @include mix.flex-standard($flex: row, $items: center, $justify: center);
+                gap: 1rem;
+                margin-top: 0.5rem;
+
+                img {
+                    width: 28px;
+                }
+
+                .js {
+                    width: 26px;
+                }
+
+            }
+
+        }
+
+    }
+
+    @include mix.media-query(l) {
+        margin-top: 25rem;
+
+        .first-text {
+            max-width: 70rem;
+
+            h2 {
+                font-size: 5rem;
+            }
+        }
+
+        .home-text { 
+            font-size: 1.8rem;
+        }
+
+        .tech-container{
+           margin-top: 18rem;
+        }
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .img-container {
+//     // background-color: #d9534f;
+//     height: 25rem;
+//     width: 25rem;
+//     @include mix.flex-standard($flex: column, $items: center, $justify: center);
+// }
+
+// .objects {
+//     width: 14rem;
+//     height: 14rem;
+//     border-radius: 50%;
+//     overflow: hidden;
+//     background-color: aqua;
+//     animation: objectsAnimation linear 4s infinite;
+
+// }
+
+// @keyframes objectsAnimation {
+//     0% {
+//         // position: absolute;
+//         // display: block;
+//         // top: 0.03em;
+//         // left: -1.05em;
+//         // width: 0;
+//         // height: 0;
+//         // border-right: 1em solid transparent;
+//         // border-bottom: 0.7em solid var(--star-color);
+//         // border-left: 1em solid transparent;
+//         // transform: rotate(-70deg);
+//         // content:"";
+
+
+// }
+
+
+// }
