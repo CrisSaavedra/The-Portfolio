@@ -569,7 +569,7 @@ template {
 .home-container {
   color: var(--blanco);
   margin: 0 auto;
-  margin-top: 17rem;
+  margin-top: 25vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -597,7 +597,7 @@ template {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 12rem;
+  margin-top: 30vh;
 }
 .home-container .tech-container h5 {
   font-weight: 700;
@@ -625,7 +625,7 @@ template {
   }
   .home-container .tech-container {
     gap: 1rem;
-    margin-top: 8rem;
+    margin-top: 25vh;
   }
   .home-container .tech-container h5 {
     font-weight: 700;
@@ -661,27 +661,91 @@ template {
     font-size: 1.8rem;
   }
   .home-container .tech-container {
-    margin-top: 18rem;
+    margin-top: 20rem;
   }
 }
 
 .projects-container {
-  display: block;
-  max-width: 90%;
-  margin: 2rem auto;
+  margin-top: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.display-projects {
-  background-color: rgb(38, 40, 41);
-  height: 20rem;
-  width: 90%;
-  border-radius: 2%;
-  filter: drop-shadow(0px 0px 2px var(--celeste));
-  z-index: 100;
+.container-about {
+  margin: 0 auto;
+  margin-top: 15rem;
+  width: 80%;
+  max-width: 70rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.container-about .title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.container-about .title .shapes {
+  height: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.container-about .title .shapes .shape {
+  margin-top: 3px;
+  height: 1rem;
+  width: 1rem;
+  background-color: var(--celeste);
+  animation: shapesA 6s ease-in-out infinite forwards;
+}
+.container-about .title .shapes .shape:nth-child(2) {
+  background-color: var(--rosado);
+  animation-delay: 0.2s;
+}
+.container-about .title .shapes .shape:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.container-about h3 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: var(--celeste);
+}
+.container-about span {
+  color: var(--rosado);
+}
+.container-about .about {
+  text-align: justify;
+  font-size: 1.4rem;
+}
+.container-about .about p {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  padding: 0;
+}
+.container-about .about p span {
+  color: var(--rosado);
+}
+
+@keyframes shapesA {
+  0% {
+    transform: rotate(0);
+    border-radius: 0%;
+  }
+  50% {
+    transform: rotate(180deg);
+    border-radius: 50%;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-radius: 0%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
