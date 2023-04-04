@@ -1,8 +1,168 @@
 @use'../../sass/mixins' as mix;
 
-.projects-container{
+.projects-container {
 
-    margin-top: 10rem;
+    margin: 0 auto;
+    margin-top: 7rem;
+    width: 80%;
+    max-width: 70rem;
+    text-align: center;
 
-    @include mix.flex-standard($flex: column, $items: center, $justify: center);
+    @include mix.flex-standard($flex: column, $items: end, $justify: center);
+
+    h3 {
+        font-weight: 400;
+        font-size: 2.5rem;
+        color: var(--celeste);
+    }
+
+    span {
+        color: var(--rosado);
+    }
+
+    .title-project {
+        width: 100%;
+        @include mix.flex-standard($flex: row, $items: center, $justify: space-between);
+    }
+
+    .line {
+        height: 0.5rem;
+        width: 8rem;
+        margin-top: 3px;
+        background: linear-gradient(-90deg, var(--rosado) 20%, var(--celeste) 100%);
+    }
+
+    .display-projects {
+        margin-top: 3rem;
+        border: 1px solid rgba(129, 129, 129, 0.071);
+        border-radius: 5% 5% 0% 0%;
+
+        .screen {
+            border-radius: 5% 5% 0% 0%;
+        }
+
+        .text-project {
+            max-width: 85%;
+            margin: .6rem auto;
+
+            h5 {
+                margin-top: 1rem;
+                font-size: 1.5rem;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+
+            p {
+                text-align: justify;
+                margin: 0.5rem auto;
+                font-weight: 400;
+                font-size: 1.5rem;
+                color: rgb(123, 122, 123);
+                text-transform: lowercase;
+                text-align: center;
+            }
+
+            .techs-use {
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 1.4rem;
+            }
+
+        }
+
+        .btn-project {
+
+            height: 5rem;
+            @include mix.flex-standard($flex: row, $items: center, $justify: space-around);
+
+            a {
+                @include mix.flex-standard($flex: row, $items: center, $justify: center);
+                font-size: 1.8rem;
+
+                img {
+                    margin-right: .5rem;
+                    filter: invert(37%) sepia(0%) saturate(1%) hue-rotate(41deg) brightness(102%) contrast(91%);
+
+                }
+
+                &:hover {
+                    // img {
+                    //     filter: invert(99%) sepia(46%) saturate(219%) hue-rotate(301deg) brightness(111%) contrast(84%);
+                    // }
+
+                    opacity: 0.6;
+                }
+            }
+
+            a:nth-child(1) {
+                color: var(--celeste);
+            }
+
+            a:nth-child(2) {
+                color: var(--rosado);
+
+                img {
+                    margin-top: 2px;
+
+                }
+            }
+        }
+    }
+
+
+    @include mix.media-query(md) {
+        .display-projects {
+            .text-project {
+                h5 {
+                    margin-top: 2rem;
+                    font-size: 1.8rem;
+                }
+
+                p {
+                    margin-top: 2rem;
+                    font-size: 1.7rem;
+                }
+
+                p:nth-child(3) {
+
+                    font-size: 1.7rem;
+                }
+            }
+        }
+    }
+
+
+    @include mix.media-query(l) {
+        .display-projects {
+            @include mix.flex-standard($flex: row, $items: end, $justify: center);
+            border-radius: 3% 0% 0% 3%;
+            width: 100%;
+
+            .text-container{
+               width: 100%;
+               height: 100%;
+            }
+            .screen{
+                width: 40rem;
+                border-radius: 3% 0 0 3%;
+            }
+
+            .text-project {
+                h5 {
+                    font-size: 1.7rem;
+                }
+
+                p {
+                    margin-top: 2rem;
+                    font-size: 1.6rem;
+                }
+
+                p:nth-child(3) {
+
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
 }

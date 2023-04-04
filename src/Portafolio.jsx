@@ -11,7 +11,7 @@ export const Portafolio = () => {
             <NavBar />
             <Home />
             <About/>
-            {/* <Projects/> */}
+            <Projects/>
         </div>
 
     )
