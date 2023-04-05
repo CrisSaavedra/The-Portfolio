@@ -2,16 +2,21 @@ import { NavBar } from "./components/navBar/NavBar";
 import { Home } from "./components/homes/Home";
 import { Projects } from "./components/projects/Projects"
 import { About } from "./components/about/About";
+import { Contact } from "./components/contact/Contact";
+
 
 export const Portafolio = () => {
     return (
 
-        <div className="container">
+        <div >
             {/* loader aca */}
-            <NavBar />
-            <Home />
-            <About/>
-            <Projects/>
+            <div className="container">
+                <NavBar />
+                <Home />
+                <About />
+                <Projects />
+                <Contact />
+            </div>
         </div>
 
     )

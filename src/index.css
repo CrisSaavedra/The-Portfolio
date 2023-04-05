@@ -721,7 +721,7 @@ template {
   margin: 0.5rem auto;
   font-weight: 400;
   font-size: 1.5rem;
-  color: rgb(123, 122, 123);
+  color: #7b7a7b;
   text-transform: lowercase;
   text-align: center;
 }
@@ -742,7 +742,7 @@ template {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 .projects-container .display-projects .btn-project a img {
   margin-right: 0.5rem;
@@ -771,6 +771,9 @@ template {
   }
   .projects-container .display-projects .text-project p:nth-child(3) {
     font-size: 1.7rem;
+  }
+  .projects-container .display-projects .btn-project a {
+    font-size: 1.9rem;
   }
 }
 @media screen and (min-width: 1080px) {
@@ -875,6 +878,53 @@ template {
     transform: rotate(360deg);
     border-radius: 0%;
   }
+}
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+  padding-bottom: 4rem;
+}
+.contact-container .text-contact {
+  text-align: center;
+}
+.contact-container .text-contact h3 {
+  color: #7b7a7b;
+  display: none;
+}
+.contact-container .text-contact p {
+  margin-top: 4rem;
+  background: linear-gradient(45deg, var(--celeste) 39%, var(--rosado) 50%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contact-container .contacts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 24rem;
+}
+.contact-container .contacts .contact a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.9rem;
+  gap: 1rem;
+  color: #7b7a7b;
+}
+.contact-container .contacts .contact a img {
+  width: 25px;
+}
+.contact-container .contacts .contact:nth-child(2) img, .contact-container .contacts .contact:nth-child(3) img {
+  filter: invert(37%) sepia(0%) saturate(1%) hue-rotate(41deg) brightness(102%) contrast(91%);
 }
 
 /*# sourceMappingURL=index.css.map */
