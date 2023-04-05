@@ -68,6 +68,12 @@
         }
     }
 
+    @include mix.media-query(l) {
+        .about {
+            font-size: 1.6rem;
+        }
+    }
+
 
 }
 

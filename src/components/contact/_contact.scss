@@ -1,19 +1,14 @@
 @use'../../sass/mixins' as mix;
 
 .contact-container {
-    
+
     @include mix.flex-standard($flex: column, $items: center, $justify: center);
     margin-top: 10rem;
     padding-bottom: 4rem;
-   
+
 
     .text-contact {
         text-align: center;
-
-        h3 {
-            color: #7b7a7b;
-            display: none;
-        }
 
         p {
             margin-top: 4rem;
@@ -40,6 +35,7 @@
                 font-size: 1.9rem;
                 gap: 1rem;
                 color: #7b7a7b;
+
                 img {
                     width: 25px;
                 }
@@ -52,6 +48,16 @@
                 }
             }
 
+        }
+    }
+
+    @include mix.media-query(l) {
+        .text-contact {
+            p {
+
+                font-size: 1.8rem;
+
+            }
         }
     }
 

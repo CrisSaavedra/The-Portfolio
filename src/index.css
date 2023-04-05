@@ -864,6 +864,11 @@ template {
 .container-about .about p span {
   color: var(--rosado);
 }
+@media screen and (min-width: 1080px) {
+  .container-about .about {
+    font-size: 1.6rem;
+  }
+}
 
 @keyframes shapesA {
   0% {
@@ -889,10 +894,6 @@ template {
 }
 .contact-container .text-contact {
   text-align: center;
-}
-.contact-container .text-contact h3 {
-  color: #7b7a7b;
-  display: none;
 }
 .contact-container .text-contact p {
   margin-top: 4rem;
@@ -925,6 +926,11 @@ template {
 }
 .contact-container .contacts .contact:nth-child(2) img, .contact-container .contacts .contact:nth-child(3) img {
   filter: invert(37%) sepia(0%) saturate(1%) hue-rotate(41deg) brightness(102%) contrast(91%);
+}
+@media screen and (min-width: 1080px) {
+  .contact-container .text-contact p {
+    font-size: 1.8rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
