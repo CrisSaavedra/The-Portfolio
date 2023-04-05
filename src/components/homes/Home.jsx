@@ -8,7 +8,7 @@ import tailIcon from '../../assets/techIcons/tailwind.svg';
 
 export const Home = () => {
     return (
-        <div className="home-container">
+        <div id='home' className="home-container">
 
             <div className="first-text">
                 <h2>REACT FRONT-END DEVELOPER💻</h2>

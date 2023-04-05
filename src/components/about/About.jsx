@@ -2,7 +2,7 @@
 
 export const About = () => {
     return (
-        <div className="container-about">
+        <div id='about' className="container-about">
 
             <div className="title">
                 <h3>Abou<span>t</span></h3>

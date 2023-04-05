@@ -5,7 +5,7 @@ import linked from '../../assets/buttons/linked.svg';
 
 export const Contact = () => {
     return (
-        <div className='contact-container'>
+        <div id='contact' className='contact-container'>
             <div className='text-contact'>
                 <p>Don't by shy, contact me! :)</p>
             </div>

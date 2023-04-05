@@ -7,7 +7,7 @@ import live from '../../assets/buttons/live3btn.svg';
 export const Projects = () => {
 
   return (
-    <div className="projects-container">
+    <div id='projects' className="projects-container">
       <div className='title-project'>
         <div className='line'></div>
         <h3><span>P</span>rojects</h3>
