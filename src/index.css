@@ -914,9 +914,10 @@ template {
 }
 .contact-container .text-contact p {
   margin-top: 4rem;
-  background: linear-gradient(45deg, var(--celeste) 39%, var(--rosado) 50%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--celeste);
+}
+.contact-container .text-contact p span {
+  color: var(--rosado);
 }
 .contact-container .contacts {
   display: flex;

@@ -7,7 +7,7 @@ export const Contact = () => {
     return (
         <div id='contact' className='contact-container'>
             <div className='text-contact'>
-                <p>Don't by shy, contact me! :)</p>
+                <p>Don't by shy, <span>contact me! :) </span> </p>
             </div>
 
             <div className='contacts'>

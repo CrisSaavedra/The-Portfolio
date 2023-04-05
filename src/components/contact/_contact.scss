@@ -12,10 +12,10 @@
 
         p {
             margin-top: 4rem;
-            // color: #7b7a7b;
-            background: linear-gradient(45deg, var(--celeste) 39%, var(--rosado) 50%);
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: var(--celeste);
+            span{
+                color: var(--rosado);
+            } 
         }
     }
 
