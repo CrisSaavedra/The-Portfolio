@@ -25,7 +25,7 @@ export const Projects = () => {
             <p className='techs-use'>REACT - SASS</p>
           </div>
           <div className='btn-project'>
-            <a href="https://github.com/CrisSaavedra/The-simple-weather" target="_blank"><img src={gitHub} alt="github logo" width={20} />GITHUB</a>
+            <a href="https://github.com/CrisSaavedra/humano-barber-chile" target="_blank"><img src={gitHub} alt="github logo" width={20} />GITHUB</a>
             <a href="https://master--humano-barber-demo.netlify.app/" target="_blank"><img src={live} alt="live logo" width={28} />LIVE</a>
           </div>
         </div>
