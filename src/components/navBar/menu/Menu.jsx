@@ -14,7 +14,7 @@ export const Menu = () => {
             menuNav.classList.add('a-buttonsMenu-1');
             menuNav.style.display = "block";
             menuNav.style.backgroundColor = "#262727"
-            
+
         } else {
             menuNav.classList.add('a-buttonsMenu-1-reverse');
             hamburger.style.display = "block";
@@ -32,7 +32,7 @@ export const Menu = () => {
             }
             if (e.animationName === 'buttonsMenu1') {
                 menuNav.classList.remove('a-buttonsMenu-1');
-                hamburger.style.display = "none";
+
             }
         })
 
@@ -44,13 +44,8 @@ export const Menu = () => {
             let hambuerger = document.getElementById('hamburger-button');
             if (window.innerWidth > 1080) {
                 element.style.display = "block";
-                hambuerger.style.display = "none";
-                if(window.scrollY > 40){
-                    element.style.backgroundColor = "#262727"
-                }else{
-                    element.style.backgroundColor = "#191919"
-                }
-                
+                element.style.backgroundColor = "inherit"
+
             } else {
                 element.style.display = "none";
                 hambuerger.style.display = "block";
@@ -69,13 +64,13 @@ export const Menu = () => {
             });
         } else {
             var moreLess = 110;
-            var elementPosition  = element.getBoundingClientRect().top;
+            var elementPosition = element.getBoundingClientRect().top;
             var offsetPosition = elementPosition + window.pageYOffset - moreLess;
-      
+
             window.scrollTo({
                 top: offsetPosition,
                 behavior: "smooth"
-            });   
+            });
         }
 
     }
@@ -94,10 +89,10 @@ export const Menu = () => {
             <nav id="nav" className="options-container ">
                 <a className='x-button' id='x-button' onClick={e => onClickButtons(e)} href="#"><img src={close} alt="button" width={16} /></a>
                 <div id='options' className="options">
-                    <a href="#" onClick={e => goToAbout(e, 'home')}>Home</a>
-                    <a href="#" onClick={e => goToAbout(e, 'about')}>About</a>
-                    <a href="#" onClick={e => goToAbout(e, 'projects')}>Projects</a>
-                    <a href="#" onClick={e => goToAbout(e, 'contact')}><span>Contact</span></a>
+                    <a href="#" onClick={e => goToAbout(e, 'home')}>Inicio</a>
+                    <a href="#" onClick={e => goToAbout(e, 'about')}>Sobre Mi</a>
+                    <a href="#" onClick={e => goToAbout(e, 'projects')}>Proyectos</a>
+                    <a href="#" onClick={e => goToAbout(e, 'contact')}><span>Contacto</span></a>
                 </div>
             </nav>
         </div>

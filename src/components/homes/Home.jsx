@@ -11,7 +11,7 @@ export const Home = () => {
         <div id='home' className="home-container">
 
             <div className="first-text">
-                <h2>REACT FRONT-END DEVELOPER💻</h2>
+                <h2>DESARROLLADOR WEB💻</h2>
             </div>
 
             <div className="home-text">

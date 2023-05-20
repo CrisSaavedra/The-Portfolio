@@ -21,25 +21,12 @@ export const Portafolio = () => {
 
         window.addEventListener("scroll", (e) => {
             let scroll = window.scrollY;
-            if (scroll > 29) {
-                nav.classList.add('scrollNabar');
+            if (scroll > 0) {
                 back.classList.add('background');
-                home.style.marginTop = '35rem';
-                if (window.innerWidth < 1080) {
-                    menuNav.style.backgroundColor = "#262727"
-                } else {
-                    menuNav.style.backgroundColor = "#262727"
-                }
             }
             else {
                 back.classList.remove('background');
-                nav.classList.remove('scrollNabar');
-                home.style.marginTop = '25rem';
-                if (window.innerWidth < 1079) {
-                    menuNav.style.backgroundColor = "#262727"
-                } else {
-                    menuNav.style.backgroundColor = "#191919"
-                }
+             
             }
         })
 
@@ -48,7 +35,6 @@ export const Portafolio = () => {
     return (
 
         <div >
-            {/* loader aca */}
             <div id="back" className=""> </div>  {/* CHANGE THE BACKGROUND COLOR OF NAVBAR, IT'S FOR NOT DO ALL AGAIN  */}
             <div className="container">
                 <NavBar />

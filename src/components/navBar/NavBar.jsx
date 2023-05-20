@@ -5,12 +5,14 @@ import hamburger from '../../assets/buttons/hamburger.svg';
 
 export const NavBar = () => {
   return (
-    <div id="nav-container" className="nav-container">
-      <div className="logo-container">
-        <img src={logo} alt="logo" width={50} />
-        <h1>crisdev</h1>
+    <div className="nav-fixe-01">
+      <div id="nav-container" className="nav-container scrollNabar">
+        <div className="logo-container">
+          <img src={logo} alt="logo" width={50} />
+          <h1>crisdev</h1>
+        </div>
+        <Menu />
       </div>
-      <Menu />
     </div>
   )
 }
