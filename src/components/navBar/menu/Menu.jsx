@@ -90,7 +90,7 @@ export const Menu = () => {
                 <a className='x-button' id='x-button' onClick={e => onClickButtons(e)} href="#"><img src={close} alt="button" width={16} /></a>
                 <div id='options' className="options">
                     <a href="#" onClick={e => goToAbout(e, 'home')}>Inicio</a>
-                    <a href="#" onClick={e => goToAbout(e, 'about')}>Sobre Mi</a>
+                    <a href="#" onClick={e => goToAbout(e, 'about')}>Sobre mi</a>
                     <a href="#" onClick={e => goToAbout(e, 'projects')}>Proyectos</a>
                     <a href="#" onClick={e => goToAbout(e, 'contact')}><span>Contacto</span></a>
                 </div>

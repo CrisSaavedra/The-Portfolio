@@ -42,7 +42,7 @@
         .techs {
             @include mix.flex-standard($flex: row, $items: center, $justify: center);
             gap: 1rem;
-            margin-top: 0.5rem;
+            margin-top: 2rem;
         }
 
     }
@@ -87,6 +87,8 @@
                 .js {
                     width: 26px;
                 }
+
+                
 
             }
 
