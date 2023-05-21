@@ -646,6 +646,7 @@ template {
   justify-content: center;
   gap: 1rem;
   margin-top: 2rem;
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
   .home-container .first-text {
@@ -680,7 +681,7 @@ template {
     width: 28px;
   }
   .home-container .tech-container .techs .js {
-    width: 26px;
+    width: 24px;
   }
 }
 @media screen and (min-width: 1080px) {

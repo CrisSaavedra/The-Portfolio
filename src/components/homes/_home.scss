@@ -43,6 +43,8 @@
             @include mix.flex-standard($flex: row, $items: center, $justify: center);
             gap: 1rem;
             margin-top: 2rem;
+            flex-wrap: wrap;
+
         }
 
     }
@@ -65,7 +67,7 @@
         }
 
         .tech-container {
-       
+
             gap: 1rem;
             margin-top: 25vh;
 
@@ -85,10 +87,10 @@
                 }
 
                 .js {
-                    width: 26px;
+                    width: 24px;
                 }
 
-                
+
 
             }
 
@@ -108,12 +110,12 @@
             }
         }
 
-        .home-text { 
+        .home-text {
             font-size: 1.8rem;
         }
 
-        .tech-container{
-           margin-top: 20rem;
+        .tech-container {
+            margin-top: 20rem;
         }
 
     }
