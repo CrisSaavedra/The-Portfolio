@@ -1,7 +1,6 @@
 import weather from '../../assets/screens/weather.png';
 import moviet from '../../assets/screens/moviet.png';
 import humano from '../../assets/screens/humano.png';
-import foria from '../../assets/screens/foria.png';
 import gitHub from '../../assets/buttons/githubbtn.svg';
 import live from '../../assets/buttons/live3btn.svg';
 
