@@ -10,14 +10,6 @@ import live from '../../assets/buttons/live3btn.svg';
 
 const projects = [
   {
-    title: 'FORIA',
-    description: 'mini tienda de ropa, demo',
-    img: foria,
-    techs: 'REACT - TS - TAILWIND',
-    git: 'https://github.com/CrisSaavedra/foria',
-    live: 'https://foria.netlify.app/#/products',
-  },
-  {
     title: 'HUMANO BARBER',
     description: 'Diseñado para una barberia',
     img: humano,
