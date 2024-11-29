@@ -6,7 +6,7 @@ import tailIcon from '../../assets/techIcons/tailwind.svg';
 import mongo from '../../assets/techIcons/mongo.svg';
 import postgresql from '../../assets/techIcons/postgresql.svg';
 import angular from '../../assets/techIcons/angular.svg';
-import fastapi from '../../assets/techIcons/fastAPI.svg';
+import fastapi from '../../assets/techIcons/fastapi.svg';
 import python from '../../assets/techIcons/python.svg';
 import nestjs from '../../assets/techIcons/nestjs.svg';
 
