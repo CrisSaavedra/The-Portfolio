@@ -6,7 +6,7 @@ import tailIcon from '../../assets/techIcons/tailwind.svg';
 import mongo from '../../assets/techIcons/mongo.svg';
 import postgresql from '../../assets/techIcons/postgresql.svg';
 import angular from '../../assets/techIcons/angular.svg';
-import fastapi from '../../assets/techIcons/fastapi.svg';
+// import fastapi from '../../assets/techIcons/fastapi.svg';
 import python from '../../assets/techIcons/python.svg';
 import nestjs from '../../assets/techIcons/nestjs.svg';
 
@@ -36,7 +36,7 @@ export const Home = () => {
                     <img className='js' src={angular} alt="htmlIcon"  width={23}/>
                     <img src={node} alt="htmlIcon" width={25} />
                     <img className='js' src={nestjs} alt="htmlIcon" width={23} />
-                    <img className='js' src={fastapi} alt="htmlIcon" width={23} />
+                    {/* <img className='js' src={fastapi} alt="htmlIcon" width={23} /> */}
                     <img src={mongo} alt="htmlIcon" width={25} />
                     <img className='js' src={postgresql} alt="htmlIcon" width={23} />
                     <img src={tailIcon} alt="sass" width={25} />
