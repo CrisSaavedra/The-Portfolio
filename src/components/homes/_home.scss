@@ -3,7 +3,7 @@
 .home-container {
     color: var(--blanco);
     margin: 0 auto;
-    margin-top: 25vh;
+    margin-top:  calc(25vh + 10rem);
     @include mix.flex-standard($flex: column, $items: center, $justify: center);
     text-align: center;
     max-width: 90%;
@@ -99,7 +99,7 @@
     }
 
     @include mix.media-query(l) {
-        margin-top: 25rem;
+        margin-top:  calc(25vh + 10rem);
         // transition: all 0.5s ease-out;
 
         .first-text {

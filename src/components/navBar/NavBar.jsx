@@ -1,17 +1,31 @@
 import { Menu } from "./menu/Menu"
 import logo from '../../assets/logo.png';
+import { useEffect, useRef } from "react";
 
 
 export const NavBar = () => {
+
+  const navBar = useRef(null);
+
+  useEffect(() => {
+    const onScroll = window.addEventListener("scroll", () => {
+
+    });
+
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+    };
+  }, [])
+
   return (
-    <div className="nav-fixe-01">
-      <div id="nav-container" className="nav-container scrollNabar">
+    <nav className="nav-fixe-01" ref={navBar} >
+      <div id="nav-container" className="nav-container scrollNabar" >
         <div className="logo-container">
           <img src={logo} alt="logo" width={50} />
           <h1>crisisaave</h1>
         </div>
         <Menu />
       </div>
-    </div>
+    </nav>
   )
 }

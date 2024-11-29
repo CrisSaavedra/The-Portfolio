@@ -9,8 +9,8 @@ export const Portafolio = () => {
 
     return (
         <div >
+            <NavBar />
             <div className="container">
-                <NavBar />
                 <Home />
                 <About />
                 <Projects />

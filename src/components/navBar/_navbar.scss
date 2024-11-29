@@ -54,21 +54,25 @@
 
 //CHANGE DE POSITION OF NAVBAR WHEN SCROLL
 
-.nav-fixe-01{
-    position: relative;    
+.nav-fixe-01{  
+    position: fixed;    
     height: 10rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--negro-2);
+    width: 100%;
+
 }
 
+
 .scrollNabar {    
-    position: fixed;    
     width: 90%;
-    max-width: 140rem;
     z-index: 100;
     transition: all 0.5s ease-in-out;
+    max-width: 120rem;
 }
 
 .background {
-    position: fixed;
     height: 10rem;
     width: 100%;
     background-color: var(--negro-2);
