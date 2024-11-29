@@ -31,14 +31,14 @@ export const Home = () => {
                 <h5>TECNOLOGÍAS</h5>
                 <div className='techs techbar'>
                     <img className='js' src={ts} alt="tsicon" width={21} />
-                    <img className='js' src={python} alt="htmlIcon" />
+                    <img className='js' src={python} alt="htmlIcon" width={23} />
                     <img src={reactIcon} alt="reactIcon" width={25} />
-                    <img className='js' src={angular} alt="htmlIcon" />
+                    <img className='js' src={angular} alt="htmlIcon"  width={23}/>
                     <img src={node} alt="htmlIcon" width={25} />
-                    <img className='js' src={nestjs} alt="htmlIcon" />
-                    <img className='js' src={fastapi} alt="htmlIcon" />
+                    <img className='js' src={nestjs} alt="htmlIcon" width={23} />
+                    <img className='js' src={fastapi} alt="htmlIcon" width={23} />
                     <img src={mongo} alt="htmlIcon" width={25} />
-                    <img className='js' src={postgresql} alt="htmlIcon" />
+                    <img className='js' src={postgresql} alt="htmlIcon" width={23} />
                     <img src={tailIcon} alt="sass" width={25} />
                     <img src={sass} alt="tailIcon" width={25} />
 
