@@ -1,5 +1,5 @@
 {
-  "homepage": "http://CrisSaavedra.github.io/The-Portafolio/",
+  "homepage": "CrisSaavedra.github.io/The-Portafolio",
   "name": "the-portafolio",
   "private": true,
   "version": "0.0.0",
@@ -9,9 +9,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "sass": "sass --watch src/index.scss src/index.css",
-    "deploy": "gh-pages -d dist",
-    "predeploy": "npm run build"
-
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "react": "^18.3.1",
