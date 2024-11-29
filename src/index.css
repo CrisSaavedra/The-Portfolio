@@ -455,6 +455,7 @@ template {
   justify-content: center;
   transition: background-color 0.5s ease-in-out;
   width: 100%;
+  z-index: 10;
 }
 
 .scrollNabar {
