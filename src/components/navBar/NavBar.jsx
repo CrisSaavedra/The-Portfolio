@@ -9,7 +9,8 @@ export const NavBar = () => {
 
   useEffect(() => {
     const onScroll = window.addEventListener("scroll", () => {
-
+      const scrollTop = window.scrollY;
+      navBar.current.classList.toggle("bg_black", scrollTop > 0);
     });
 
     return () => {
