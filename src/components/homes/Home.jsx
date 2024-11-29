@@ -10,10 +10,6 @@ import python from '../../assets/techIcons/python.svg';
 import nestjs from '../../assets/techIcons/nestjs.svg';
 import fastapiIcon from '../../assets/techIcons/fastapi.svg';
 
-// import jsIcon from '../../assets/techIcons/javascript.svg';
-// import mysql from '../../assets/techIcons/mysql.svg';
-// import java from '../../assets/techIcons/java.svg';
-
 
 export const Home = () => {
     return (
